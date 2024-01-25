@@ -17,6 +17,6 @@ jobs:
         with:
           node-version-file: 'package.json'
       - name: Install dependencies
-        run: npm i --global yarn && yarn
+        run: yarn
       - name: Tests
         run: yarn test
