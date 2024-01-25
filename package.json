@@ -1,6 +1,6 @@
 {
   "name": "with-show-controls",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple wrapper around showing and hiding simple components.",
   "type": "module",
   "author": "Shane Avery Sistoza <me@ssistoza.dev> (http://ssistoza.github.io/)",
