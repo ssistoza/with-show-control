@@ -5,6 +5,9 @@
   "type": "module",
   "author": "Shane Avery Sistoza <me@ssistoza.dev> (http://ssistoza.github.io/)",
   "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
   "types": "./withShowControl.tsx",
   "exports": {
     "import": "./dist/with-show-controls.js",
