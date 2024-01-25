@@ -1,0 +1,47 @@
+{
+  "name": "with-show-controls",
+  "version": "1.0.0",
+  "description": "A simple wrapper around showing and hiding simple components.",
+  "type": "module",
+  "author": "Shane Avery Sistoza <me@ssistoza.dev> (http://ssistoza.github.io/)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "types": "./withShowControl.tsx",
+  "exports": {
+    "import": "./dist/with-show-controls.js",
+    "require": "./dist/with-show-controls.cjs",
+    "types": "./dist/withShowControls.d.ts"
+  },
+  "packageManager": "yarn@4.0.2",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.3.0",
+    "@testing-library/react": "^14.1.2",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^1.2.1",
+    "jsdom": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.1",
+    "vitest-dom": "^0.1.1"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "vite build && yarn build:types",
+    "postbuild": "yarn build:types",
+    "build:types": "tsc --build tsconfig.build.json",
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest"
+  }
+}
