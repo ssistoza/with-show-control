@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["withShowControl.test.tsx"],
+  "compilerOptions": {
+    "emitDeclarationOnly": true
+  }
+}
