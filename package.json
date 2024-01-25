@@ -5,6 +5,11 @@
   "type": "module",
   "author": "Shane Avery Sistoza <me@ssistoza.dev> (http://ssistoza.github.io/)",
   "license": "MIT",
+  "files": [
+    "dist",
+    "withShowControl.tsx",
+    "README.md"
+  ],
   "engines": {
     "node": ">=18"
   },
