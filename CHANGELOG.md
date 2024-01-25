@@ -1,5 +1,11 @@
 # with-show-controls
 
+## 1.0.3
+
+### Patch Changes
+
+- 601efae: try bumping a release
+
 ## 1.0.2
 
 ### Patch Changes
