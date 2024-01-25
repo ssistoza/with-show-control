@@ -20,6 +20,8 @@ jobs:
         run: yarn
       - name: Yarn config setup
         run: yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
+      - name: Build
+        run: yarn build
       - name: Create Release PR or Publish Package
         id: changesets
         uses: changesets/action@v1
