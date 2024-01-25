@@ -18,6 +18,8 @@ jobs:
           node-version-file: 'package.json'
       - name: Install dependencies
         run: yarn
+      - name: Yarn config setup
+        run: yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
       - name: Create Release PR or Publish Package
         id: changesets
         uses: changesets/action@v1
